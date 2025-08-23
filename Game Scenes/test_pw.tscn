@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmedwwt6au3cx"]
+
+[ext_resource type="LabelSettings" uid="uid://6i4uxhfky4l0" path="res://MainMenu/Font/Main_Menu_NAME_100px.tres" id="1_bi3w5"]
+[ext_resource type="PackedScene" uid="uid://dr57x3n4b46j7" path="res://MainMenu/exit.tscn" id="2_alnys"]
+
+[node name="TestPW" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 247.0
+offset_top = 139.0
+offset_right = 740.0
+offset_bottom = 344.0
+text = "PASSWORD"
+label_settings = ExtResource("1_bi3w5")
+
+[node name="Exit" parent="." instance=ExtResource("2_alnys")]

@@ -1,0 +1,216 @@
+[gd_scene load_steps=7 format=3 uid="uid://ce2i2rxqmvp1i"]
+
+[ext_resource type="LabelSettings" uid="uid://6i4uxhfky4l0" path="res://MainMenu/Font/Main_Menu_NAME_100px.tres" id="1_8m0bk"]
+[ext_resource type="Script" uid="uid://duvk3v8lj8jcx" path="res://MainMenu/login.gd" id="1_fc8jk"]
+[ext_resource type="FontFile" uid="uid://8swg6l30n6tg" path="res://MainMenu/Font/CyberTechnoDemo-Regular.otf" id="2_fc8jk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xgj2p"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ow4nf"]
+bg_color = Color(1, 0.278431, 0.364706, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fc8jk"]
+
+[node name="NameInput" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fc8jk")
+
+[node name="User" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="User"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xgj2p")
+
+[node name="Label" type="Label" parent="User"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -420.0
+offset_top = 55.0
+offset_right = 420.0
+offset_bottom = 156.0
+grow_horizontal = 2
+text = "Enter your name"
+label_settings = ExtResource("1_8m0bk")
+justification_flags = 161
+
+[node name="NameInput" type="LineEdit" parent="User"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.5
+offset_top = -137.0
+offset_right = 214.5
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 70
+placeholder_text = "Name"
+
+[node name="OkButton" type="Button" parent="User"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 65.0
+offset_right = 100.0
+offset_bottom = 123.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ow4nf")
+text = "ok"
+
+[node name="User2Admin" type="Button" parent="User"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 309.0
+offset_top = 249.0
+offset_right = 589.0
+offset_bottom = 307.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ow4nf")
+text = " Login as ADMIN "
+
+[node name="Admin" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AdmPanel" type="Panel" parent="Admin"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xgj2p")
+
+[node name="AdmLabel" type="Label" parent="Admin"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -420.0
+offset_top = 55.0
+offset_right = 420.0
+offset_bottom = 156.0
+grow_horizontal = 2
+text = "Enter your Credentials"
+label_settings = ExtResource("1_8m0bk")
+justification_flags = 161
+
+[node name="AdmNameInput" type="LineEdit" parent="Admin"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.5
+offset_top = -152.0
+offset_right = 214.5
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+placeholder_text = "Name"
+
+[node name="AdmPasswordInput" type="LineEdit" parent="Admin"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.5
+offset_top = 18.0
+offset_right = 214.5
+offset_bottom = 166.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_fc8jk")
+placeholder_text = "Password"
+secret = true
+
+[node name="AdmOkButton" type="Button" parent="Admin"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 196.0
+offset_right = 100.0
+offset_bottom = 254.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ow4nf")
+text = "LOG IN"
+
+[node name="Admin2User" type="Button" parent="Admin"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 412.0
+offset_top = 281.0
+offset_right = 612.0
+offset_bottom = 339.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_fc8jk")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ow4nf")
+text = "BACK"
+
+[connection signal="pressed" from="User/OkButton" to="." method="_on_ok_button_pressed"]
+[connection signal="pressed" from="User/User2Admin" to="." method="_on_user_2_admin_pressed"]
+[connection signal="pressed" from="Admin/AdmOkButton" to="." method="_on_adm_ok_button_pressed"]
+[connection signal="pressed" from="Admin/Admin2User" to="." method="_on_admin_2_user_pressed"]

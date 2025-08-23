@@ -1,0 +1,205 @@
+[
+    {
+        "from": "security@yourbank.com",
+        "subject": "Verify Your Account",
+        "body": "Dear {name},\nWe detected unusual activity in your account. Please verify immediately at [url=https://secure-bank.com/login]this link[/url].",
+        "phishing": true,
+        "tip": "Banks usually address you by full name. Check the link carefully."
+    },
+    {
+        "from": "it-support@company.com",
+        "subject": "Password Expiration Notice",
+        "body": "Dear Customer,\nYour password will expire in 24 hours. Reset it at [url=https://secure-reset.company.com]this portal[/url].",
+        "phishing": true,
+        "tip": "Generic greetings + urgent requests are often phishing."
+    },
+    {
+        "from": "rewards@onlineshop.com",
+        "subject": "You Won a Gift Card!",
+        "body": "Dear {name},\nCongratulations! Claim your $100 gift card here: [url=https://giftshop-prize.com]Claim Prize[/url].",
+        "phishing": true,
+        "tip": "Unexpected prizes are usually scams."
+    },
+    {
+        "from": "no-reply@bank.com",
+        "subject": "Account Alert",
+        "body": "Dear Customer,\nA login attempt was made from a new device. If not you, secure your account.",
+        "phishing": true,
+        "tip": "Legitimate banks use full names and official apps/sites."
+    },
+    {
+        "from": "security@paypal.com",
+        "subject": "Suspicious Activity Detected",
+        "body": "Dear {name},\nYour PayPal account has been locked. Confirm identity via your account page.",
+        "phishing": true,
+        "tip": "Phishing often asks you to click a link or login unexpectedly."
+    },
+    {
+        "from": "alerts@bank.com",
+        "subject": "Final Warning: Account Closure",
+        "body": "Dear Customer,\nYour account will be closed in 24 hours unless you log in.",
+        "phishing": true,
+        "tip": "Urgency + generic greeting = suspicious."
+    },
+    {
+        "from": "helpdesk@company.com",
+        "subject": "Urgent: Account Lock",
+        "body": "Dear Customer,\nYour corporate account has been locked. Reset your password immediately.",
+        "phishing": true,
+        "tip": "Corporate IT rarely sends generic emails asking for passwords."
+    },
+    {
+        "from": "contact@charity.org",
+        "subject": "Disaster Relief Donations Needed",
+        "body": "Dear {name},\nDonate now to help victims.",
+        "phishing": true,
+        "tip": "Verify charities before donating; scammers use emotional triggers."
+    },
+    {
+        "from": "updates@streamflix.com",
+        "subject": "Payment Issue",
+        "body": "Dear Customer,\nWe couldn't process your subscription payment. Update details.",
+        "phishing": true,
+        "tip": "Streaming services usually let you update payments in their official app or site."
+    },
+    {
+        "from": "security@apple.com",
+        "subject": "Apple ID Locked",
+        "body": "Dear Customer,\nYour Apple ID is locked. Restore access immediately.",
+        "phishing": true,
+        "tip": "Check the sender domain; Apple always uses apple.com."
+    },
+    {
+        "from": "billing@utilities.com",
+        "subject": "Outstanding Payment Notice",
+        "body": "Dear Customer,\nYour electricity bill is overdue. Pay immediately.",
+        "phishing": true,
+        "tip": "Utility companies rarely send threats by email."
+    },
+    {
+        "from": "alerts@creditcard.com",
+        "subject": "Credit Card Fraud Alert",
+        "body": "Dear {name},\nSuspicious transactions detected. Verify immediately.",
+        "phishing": true,
+        "tip": "Banks usually notify via apps, not external links."
+    },
+    {
+        "from": "service@techshop.com",
+        "subject": "Warranty Expired",
+        "body": "Dear Customer,\nYour device warranty expired. Renew now.",
+        "phishing": true,
+        "tip": "Unexpected expiration notices with external links are suspicious."
+    },
+    {
+        "from": "alerts@paypal.com",
+        "subject": "Unusual Login Attempt",
+        "body": "Dear Customer,\nLogin attempt from unknown device. Secure your account.",
+        "phishing": true,
+        "tip": "Generic greeting + unusual activity = red flag."
+    },
+    {
+        "from": "security@bank.com",
+        "subject": "Confirm Your Identity",
+        "body": "Dear Customer,\nWe need to confirm your identity. Click the link [url=https://banksecurity.com/security]HERE[/url]..",
+        "phishing": true,
+        "tip": "Banks do not ask for personal info through emails."
+    },
+    {
+        "from": "no-reply@school.edu",
+        "subject": "Parent-Teacher Meeting Reminder",
+        "body": "Dear {name},\nReminder for the scheduled parent-teacher meeting.",
+        "phishing": false,
+        "tip": "Official school emails use correct domains."
+    },
+    {
+        "from": "newsletter@library.org",
+        "subject": "Monthly Reading List",
+        "body": "Dear {name},\nCheck out our recommended books for this month.",
+        "phishing": false,
+        "tip": "Newsletters from official domains are safe."
+    },
+    {
+        "from": "rewards@store.com",
+        "subject": "Your Purchase Receipt",
+        "body": "Dear {name},\nThank you for your purchase. Your receipt is attached.",
+        "phishing": false,
+        "tip": "Legitimate receipts come from known stores."
+    },
+    {
+        "from": "hr@company.com",
+        "subject": "Updated Employee Handbook",
+        "body": "Dear {name},\nPlease review the updated handbook in the internal portal.",
+        "phishing": false,
+        "tip": "Internal emails on secure domains are safe."
+    },
+    {
+        "from": "support@mystore.com",
+        "subject": "Order Confirmation",
+        "body": "Dear Customer,\nThank you for your order! Track your package here.",
+        "phishing": false,
+        "tip": "Legitimate order emails match your recent purchases."
+    },
+    {
+        "from": "travel@airlines.com",
+        "subject": "Booking Confirmation",
+        "body": "Dear {name},\nYour flight booking is confirmed. View details in your account.",
+        "phishing": false,
+        "tip": "Official airline emails use correct domains."
+    },
+    {
+        "from": "updates@videostream.com",
+        "subject": "Subscription Renewal",
+        "body": "Dear {name},\nYour subscription will renew automatically. No action needed.",
+        "phishing": false,
+        "tip": "Legitimate service emails clearly explain renewal policies."
+    },
+    {
+        "from": "noreply@fitnessapp.com",
+        "subject": "Weekly Workout Summary",
+        "body": "Dear {name},\nHere is your weekly workout summary.",
+        "phishing": false,
+        "tip": "Official app emails are safe if from the correct domain."
+    },
+    {
+        "from": "info@conference.com",
+        "subject": "Conference Registration Open",
+        "body": "Dear {name},\nRegistration for the Annual Tech Conference is open.",
+        "phishing": false,
+        "tip": "Official events use correct domains."
+    },
+    {
+        "from": "support@shoppinghub.com",
+        "subject": "Invoice for Your Recent Purchase",
+        "body": "Dear {name},\nYour purchase invoice is ready. Download it from your account.",
+        "phishing": false,
+        "tip": "Legitimate invoices come from your account page."
+    },
+    {
+        "from": "no-reply@bank.com",
+        "subject": "Monthly Statement",
+        "body": "Dear {name},\nYour bank statement is ready. View it securely in your account.",
+        "phishing": false,
+        "tip": "Official statements are accessible via bank portals."
+    },
+    {
+        "from": "newsletter@museum.org",
+        "subject": "Upcoming Exhibit Announcement",
+        "body": "Dear {name},\nJoin us for our new exhibit starting next week.",
+        "phishing": false,
+        "tip": "Newsletters from official domains are safe."
+    },
+    {
+        "from": "updates@school.edu",
+        "subject": "Exam Schedule Released",
+        "body": "Dear {name},\nThe exam schedule is now available on the student portal.",
+        "phishing": false,
+        "tip": "Official school communications are safe."
+    },
+    {
+        "from": "alerts@bank.com",
+        "subject": "Statement Available",
+        "body": "Dear Customer,\nYour monthly statement is ready to view in your account.",
+        "phishing": false,
+        "tip": "Official banks always use their proper domain and portal links."
+    }
+]

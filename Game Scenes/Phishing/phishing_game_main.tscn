@@ -1,0 +1,345 @@
+[gd_scene load_steps=9 format=3 uid="uid://hfua4me4euii"]
+
+[ext_resource type="Theme" uid="uid://cscf0vq7gv2ht" path="res://Resources/PinkTheme.tres" id="1_vtl6p"]
+[ext_resource type="Script" uid="uid://ci75nqrucgt1d" path="res://Game Scenes/Phishing/phishing_game_main.gd" id="1_wdke8"]
+[ext_resource type="PackedScene" uid="uid://q0chcul4t876" path="res://dialogue/dialogue.tscn" id="3_3u4ww"]
+[ext_resource type="PackedScene" uid="uid://drfey76wqild0" path="res://Game Scenes/Phishing/card.tscn" id="4_wiene"]
+[ext_resource type="FontFile" uid="uid://dlxeofevbk4t2" path="res://MainMenu/Font/LuckiestGuy-Regular.ttf" id="5_3njus"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exgxu"]
+bg_color = Color(0.94902, 0.901961, 0.807843, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5emeq"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_yt3il"]
+font = ExtResource("5_3njus")
+font_size = 80
+font_color = Color(1, 0.278431, 0.364706, 1)
+outline_size = 5
+
+[node name="Phishing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wdke8")
+e_file = "res://Game Scenes/Phishing/phishing.JSON"
+
+[node name="EmailPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(640, 480)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -197.0
+offset_right = 320.0
+offset_bottom = 283.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_exgxu")
+
+[node name="EmailContainer" type="MarginContainer" parent="EmailPanel"]
+layout_mode = 2
+offset_right = 640.0
+offset_bottom = 480.0
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EmailPanel/EmailContainer"]
+layout_mode = 2
+theme = ExtResource("1_vtl6p")
+theme_override_constants/separation = 5
+
+[node name="FromContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="From" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "From"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+
+[node name="FromText" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel2/MarginContainer"]
+layout_mode = 2
+text = "From"
+vertical_alignment = 1
+
+[node name="SubjectContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Subject" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Subject"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+
+[node name="SubjectText" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel2/MarginContainer"]
+layout_mode = 2
+text = "From"
+vertical_alignment = 1
+
+[node name="BodyContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Body" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Body"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme = ExtResource("1_vtl6p")
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="BodyText" type="RichTextLabel" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel2/MarginContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "From"
+autowrap_mode = 2
+
+[node name="LegitButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 100.0
+offset_top = -67.0
+offset_right = 258.0
+offset_bottom = 67.0
+grow_vertical = 2
+text = "Legit"
+
+[node name="PhishButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -258.0
+offset_top = -67.0
+offset_right = -100.0
+offset_bottom = 67.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Phish"
+
+[node name="Next" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1206.0
+offset_top = -349.0
+offset_right = -1048.0
+offset_bottom = -215.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Next"
+
+[node name="Answer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 177.0
+offset_right = 215.0
+offset_bottom = 200.0
+text = "ANSWER TEST"
+
+[node name="TipsPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -294.0
+offset_top = 16.0
+offset_right = -14.0
+offset_bottom = 210.0
+grow_horizontal = 0
+
+[node name="Tip" type="Label" parent="TipsPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 2.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Tip"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Dialogue" parent="." instance=ExtResource("3_3u4ww")]
+visible = false
+d_file = "res://Game Scenes/Phishing/phishing_dialogue.JSON"
+
+[node name="HoverPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 0
+offset_left = 574.0
+offset_top = 287.0
+offset_right = 674.0
+offset_bottom = 327.0
+
+[node name="HoverLabel" type="Label" parent="HoverPanel"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="block_click" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimerPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -75.0
+offset_top = 8.0
+offset_right = 75.0
+offset_bottom = 158.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5emeq")
+
+[node name="TimerLabel" type="Label" parent="TimerPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.5
+offset_top = -40.5
+offset_right = 15.5
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+label_settings = SubResource("LabelSettings_yt3il")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Card" parent="." instance=ExtResource("4_wiene")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.0
+offset_left = -75.0
+offset_top = 8.0
+offset_right = 75.0
+offset_bottom = 158.0
+grow_vertical = 1
+
+[connection signal="pressed" from="LegitButton" to="." method="_on_legit_button_pressed"]
+[connection signal="pressed" from="PhishButton" to="." method="_on_phish_button_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

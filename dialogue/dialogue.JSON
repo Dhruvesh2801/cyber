@@ -1,0 +1,7 @@
+[
+    {"name" : "ALICE", "text" : "Systems online...\nInitializing ALICE... \nWelcome, operative. I’ve been expecting you. " },
+    {"name" : "ALICE", "text" : "I am ALICE.\nAdvanced Logic Interface for Cybernetic Engagement." },
+    {"name" : "ALICE", "text" : "I will assist you in navigating the digital threat environment." },
+    {"name" : "ALICE", "text" : "To Begin,  This is a unit test for the dialogue System" },
+    {"name" : "ALICE", "text" : "Hello World" }
+]

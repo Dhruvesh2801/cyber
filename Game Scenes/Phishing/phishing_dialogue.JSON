@@ -1,0 +1,23 @@
+[
+    {"name": "ALICE", "text": "Systems online...\nInitializing ALICE...\nWelcome, operative. I’ve been expecting you."},
+    {"name": "ALICE", "text": "I am ALICE.\nAdvanced Logic Interface for Cybernetic Engagement."},
+    {"name": "ALICE", "text": "Today, you will learn how to identify phishing emails."},
+    {"name": "ALICE", "text": "Tip 1:\nInspect the 'From' address carefully.\nExample: An email claims to be from 'PayPal', but the sender is 'support@paypall.com'.\nThat extra 'l' means it’s fake."},
+    {"name": "ALICE", "text": "Tip 2:\nWatch for urgent or threatening language.\nExample: 'Your account will be closed in 24 hours!' — Scammers use panic to push mistakes."},
+    {"name": "ALICE", "text": "Tip 3:\nLook for spelling and grammar mistakes.\nExample: 'Dear Custumer, your accont is blockd.' — Professional companies rarely make such errors."},
+    {"name": "ALICE", "text": "Tip 4:\nHover over links to reveal their true destination.\nExample: The text says 'www.bank.com', but hovering shows 'http://malicious-site.ru'."},
+    {"name": "ALICE", "text": "Tip 5:\nAvoid downloading unexpected attachments.\nExample: A 'Receipt.pdf' from an unknown sender could actually be a virus."},
+    {"name": "ALICE", "text": "Tip 6:\nBeware of generic greetings like 'Dear customer'.\nExample: If your bank knows you, they’ll use your full name."},
+    {"name": "ALICE", "text": "Tip 7:\nCheck for mismatched branding.\nExample: The logo looks blurry and colors seem off — a sign it’s a copied image."},
+    {"name": "ALICE", "text": "Tip 8:\nDon’t trust requests for sensitive info via email.\nExample: 'Confirm your password here' — legitimate companies don’t ask this."},
+    {"name": "ALICE", "text": "Tip 9:\nCross-check suspicious messages.\nExample: If you get a delivery email you didn’t request, check the courier’s official site instead."},
+    {"name": "ALICE", "text": "Tip 10:\nTrust your instincts.\nExample: If the email feels wrong, it’s safer to delete it than to take the risk."},
+    {"name": "ALICE", "text": "You will now receive a series of emails.\nSome will be safe. Some will be dangerous."},
+    {"name": "ALICE", "text": "Read each carefully. Decide if it is legitimate or a phishing attempt."},
+    {"name": "ALICE", "text": "If you make a mistake, I will provide a short tip so you can learn."},
+    {"name": "ALICE", "text": "Remember: In cyberspace, trust nothing without verification."},
+    {"name": "ALICE", "text": "Now... let's begin the training.\nPress the CLOSE button when you are ready"}
+
+
+]
+

@@ -1,0 +1,166 @@
+[gd_scene load_steps=3 format=3 uid="uid://w3y66yi7cql4"]
+
+[ext_resource type="Theme" uid="uid://cscf0vq7gv2ht" path="res://Resources/PinkTheme.tres" id="1_gsd2x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exgxu"]
+bg_color = Color(0.94902, 0.901961, 0.807843, 1)
+
+[node name="Phishing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EmailPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(640, 480)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -240.0
+offset_right = 320.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_exgxu")
+
+[node name="EmailContainer" type="MarginContainer" parent="EmailPanel"]
+layout_mode = 2
+offset_right = 640.0
+offset_bottom = 480.0
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EmailPanel/EmailContainer"]
+layout_mode = 2
+theme = ExtResource("1_gsd2x")
+theme_override_constants/separation = 5
+
+[node name="FromContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="From" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "From"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+
+[node name="FromText" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/FromContainer/Panel2/MarginContainer"]
+layout_mode = 2
+text = "From"
+vertical_alignment = 1
+
+[node name="SubjectContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Subject" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Subject"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+
+[node name="SubjectText" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/SubjectContainer/Panel2/MarginContainer"]
+layout_mode = 2
+text = "From"
+vertical_alignment = 1
+
+[node name="BodyContainer" type="HBoxContainer" parent="EmailPanel/EmailContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Panel" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Body" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Body"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme = ExtResource("1_gsd2x")
+
+[node name="MarginContainer" type="MarginContainer" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+
+[node name="BodyText" type="Label" parent="EmailPanel/EmailContainer/VBoxContainer/BodyContainer/Panel2/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "From"
+vertical_alignment = 1

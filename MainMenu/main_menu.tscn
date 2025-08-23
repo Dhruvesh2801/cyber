@@ -1,0 +1,148 @@
+[gd_scene load_steps=5 format=3 uid="uid://comjm6hlyagsa"]
+
+[ext_resource type="Script" uid="uid://cseo3te85iwhn" path="res://MainMenu/Font/main_menu.gd" id="1_5de1l"]
+[ext_resource type="LabelSettings" uid="uid://6i4uxhfky4l0" path="res://MainMenu/Font/Main_Menu_NAME_100px.tres" id="2_ajn5b"]
+[ext_resource type="FontFile" uid="uid://8swg6l30n6tg" path="res://MainMenu/Font/CyberTechnoDemo-Regular.otf" id="3_po2gx"]
+
+[sub_resource type="Theme" id="Theme_8v6q4"]
+default_font = ExtResource("3_po2gx")
+Button/font_sizes/font_size = 20
+Button/fonts/font = ExtResource("3_po2gx")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5de1l")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -4096
+layout_mode = 0
+offset_left = -66.0
+offset_right = 1421.0
+offset_bottom = 779.0
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 200.0
+text = "CYBERGUARD"
+label_settings = ExtResource("2_ajn5b")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 1280.0
+offset_bottom = 700.0
+theme = SubResource("Theme_8v6q4")
+
+[node name="MainButtons" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Play" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Play
+"
+
+[node name="Levels" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Levels
+"
+
+[node name="Credits" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Credits
+"
+
+[node name="Quit" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Quit
+"
+
+[node name="LevelsMenu" type="VBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Level1" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Phishing"
+
+[node name="Level2" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 5"
+
+[node name="Back" type="Button" parent="CenterContainer/LevelsMenu"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BACK"
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_top = 200.0
+offset_right = 1280.0
+offset_bottom = 700.0
+theme = SubResource("Theme_8v6q4")
+
+[node name="MainButtons" type="VBoxContainer" parent="CenterContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Statistics" type="Button" parent="CenterContainer2/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Statistics
+"
+
+[node name="Credits" type="Button" parent="CenterContainer2/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Credits
+"
+
+[node name="Quit" type="Button" parent="CenterContainer2/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Quit
+"
+
+[connection signal="pressed" from="CenterContainer/MainButtons/Levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="CenterContainer/MainButtons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Level5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="CenterContainer/LevelsMenu/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer2/MainButtons/Quit" to="." method="_on_quit_pressed"]

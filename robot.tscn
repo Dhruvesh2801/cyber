@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfuxs7117vqfq"]
+
+[ext_resource type="Texture2D" uid="uid://cqwbx663jdy6r" path="res://dialogue/asset/Pink_robo_animates.png" id="1_dfm56"]
+[ext_resource type="Script" uid="uid://s4rl31u5aie2" path="res://robot.gd" id="2_yhfw1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru5oq"]
+atlas = ExtResource("1_dfm56")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xofo"]
+atlas = ExtResource("1_dfm56")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yyxj1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru5oq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xofo")
+}],
+"loop": true,
+"name": &"speak",
+"speed": 10.0
+}]
+
+[node name="Robot" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_yyxj1")
+animation = &"speak"
+frame = 1
+frame_progress = 0.200289
+script = ExtResource("2_yhfw1")
