@@ -70,6 +70,7 @@ func next_script() -> void:
 		await type_text(dialogue[current_dialogue_id].get("text", ""), chat)
 	else:
 		print("End of dialogue") #debug
+		SignalManager.DialogueEnded.emit()
 		#since the last text is reached, the close button is displayed and when clicked, 
 		#the interface hides itself displaying the main scne
 		hide()
@@ -86,6 +87,7 @@ func type_text(text: String, label: RichTextLabel) -> void:
 		await get_tree().create_timer(delay).timeout
 	typing = false
 
+#moves back 1 up in dalogue
 func prev_script() -> void:
 	if current_dialogue_id >0:
 		current_dialogue_id -= 1
@@ -99,7 +101,6 @@ func prev_script() -> void:
 	else:
 		print("End of dialogue") #debug
 		#since the last text is reached, the close button is displayed and when clicked, 
-		#the interface hides itself displaying the main scne
 		hide()
 
 

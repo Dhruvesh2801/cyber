@@ -30,14 +30,11 @@ func _on_levels_pressed() -> void:
 	title.text = "Choose a Level"
 	pass # Replace with function body.
 
-
 func _on_back_pressed() -> void:
 	main_buttons.show()
 	levels_menu.hide()
 	title.text = "CYBERGUARD"
 	pass # Replace with function body.
-
-
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()
@@ -64,3 +61,8 @@ func _on_level_5_pressed() -> void:
 	get_tree().change_scene_to_file("res://Game Scenes/test_pw5.tscn")
 	pass # Replace with function body.
 #endregion
+
+
+func _on_statistics_pressed() -> void:
+	get_tree().change_scene_to_file("res://MainMenu/Leaderboard.tscn")
+	pass # Replace with function body.

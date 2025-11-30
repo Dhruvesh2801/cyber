@@ -1,0 +1,3 @@
+Player opens the game
+
+Player enters name if a player or if logging in as administrator

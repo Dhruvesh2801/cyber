@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://pvwd78epm3kl" path="res://dialogue/dialogue.gd" id="1_oi3j2"]
 [ext_resource type="PackedScene" path="res://robot.tscn" id="2_iqg0b"]
-[ext_resource type="Texture2D" uid="uid://dfoo8kko7mbwl" path="res://dialogue/asset/Dialog2.png" id="2_oi3j2"]
-[ext_resource type="Texture2D" uid="uid://bnaq08meww6dl" path="res://dialogue/asset/Next_button.png" id="3_hoxo3"]
-[ext_resource type="Texture2D" uid="uid://hajtr8kppa4x" path="res://dialogue/asset/Next_button_press.png" id="4_iq77p"]
-[ext_resource type="Texture2D" uid="uid://ecy5sqd0c1w5" path="res://dialogue/asset/Next_button_hover.png" id="5_iqg0b"]
-[ext_resource type="LabelSettings" uid="uid://5ccgk8ruls1n" path="res://dialogue/Font/Button_FONT.tres" id="7_iqg0b"]
+[ext_resource type="Texture2D" uid="uid://dfoo8kko7mbwl" path="res://MainMenu/asset/Dialog2.png" id="2_oi3j2"]
+[ext_resource type="Texture2D" uid="uid://bnaq08meww6dl" path="res://MainMenu/asset/Next_button.png" id="3_hoxo3"]
+[ext_resource type="Texture2D" uid="uid://hajtr8kppa4x" path="res://MainMenu/asset/Next_button_press.png" id="4_iq77p"]
+[ext_resource type="Texture2D" uid="uid://ecy5sqd0c1w5" path="res://MainMenu/asset/Next_button_hover.png" id="5_iqg0b"]
+[ext_resource type="LabelSettings" uid="uid://5ccgk8ruls1n" path="res://MainMenu/Font/Button_FONT.tres" id="7_iqg0b"]
 
 [node name="Dialogue" type="CanvasLayer"]
 script = ExtResource("1_oi3j2")

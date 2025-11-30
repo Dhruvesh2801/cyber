@@ -12,6 +12,9 @@ var email_data: Array = []  # Will store the whole JSON array
 @onready var hover_label: Label = $HoverPanel/HoverLabel
 @onready var card: card = $Card
 @onready var block_click: Control = $block_click
+@onready var final_score_panel: Panel = $FinalScorePanel
+@onready var final_score_text: Label = $FinalScorePanel/Score/FinalScoreText
+@onready var dialogue: CanvasLayer = $Dialogue
 
 
 @onready var timer_label: Label = $TimerPanel/TimerLabel
@@ -33,13 +36,16 @@ var total_score: int
 
 
 func _ready() -> void:
-	total_time = 0
+	dialogue.show()
+	block_click.show()
+	SignalManager.DialogueEnded.connect(game_start)
+	total_time = 20
 	timer.wait_time = 1.0
-	timer.start()
+	final_score_panel.hide()
 	
 	
 	
-	block_click.hide()
+	#block_click.hide()
 	body_text.connect("meta_hover_started", Callable(self, "_on_link_hover_start"))
 	body_text.connect("meta_hover_ended", Callable(self, "_on_link_hover_end"))
 	body_text.connect("meta_clicked", Callable(self, "_on_link_click"))
@@ -82,13 +88,14 @@ func load_email() -> Array:
 			
 		#pick a random 15 mails
 		result.shuffle()
-		return result.slice(0, 15)
+		return result.slice(0, 3) # to change back to 15
 	else:
 		push_error("Invalid JSON format: Expected an Array")
 		return []
 
 func show_random_email():
 	if email_data.is_empty():
+		game_end()
 		print("No more emails left!")
 		return
 	
@@ -107,18 +114,18 @@ func show_random_email():
 
 func check_answer(answer: bool):
 	
-	score  = max_score - total_time
+	score  = total_time
 	
 	if answer == current_email_phish:
 		card.show_card(true)
 		block_click.show()
 		timer.stop()
 		await get_tree().create_timer(0.5).timeout
-		total_time = 0
+		total_time = 20
 		timer.start()
 		block_click.hide()
-		show_random_email()
 		total_score +=score
+		show_random_email()
 	else:
 		_tip.text = current_tip
 		card.show_card(false)
@@ -126,7 +133,7 @@ func check_answer(answer: bool):
 		block_click.show()
 		timer.stop()
 		await get_tree().create_timer(5).timeout
-		total_time = 0
+		total_time = 20
 		timer.start()
 		block_click.hide()
 		tips_panel.hide()
@@ -171,7 +178,7 @@ func _on_link_click(meta):
 
 
 func _on_timer_timeout() -> void:
-	total_time += 1
+	total_time -= 1
 	timer_label.text = str(total_time)
 	
 	if total_time >= max_time:
@@ -180,9 +187,49 @@ func _on_timer_timeout() -> void:
 		block_click.show()
 		tips_panel.show()
 		await get_tree().create_timer(5).timeout
-		total_time = 0
+		total_time = 20
 		timer.start()
 		block_click.hide()
 		tips_panel.hide()
 		show_random_email()
+	pass # Replace with function body.
+
+func game_start() -> void:
+	block_click.hide()
+	timer.start()
+
+func show_score():
+	final_score_panel.show()
+	pass
+	
+@onready var retry: Button = $FinalScorePanel/retry
+@onready var main_menu: Button = $FinalScorePanel/main_menu
+@onready var next_level: Button = $FinalScorePanel/next_level
+	
+func show_buttons():
+	if GlobalVariables.is_campaign == true:
+		retry.hide()
+		main_menu.hide()
+		next_level.show()
+	else:
+		retry.show()
+		main_menu.show()
+		next_level.hide()
+	pass
+func game_end() ->void:
+	show_buttons()
+	timer.stop()
+	block_click.show()
+	show_score()
+	final_score_text.text = str(total_score)
+
+
+	
+	
+
+
+func _on_main_menu_pressed() -> void:
+	GlobalVariables.session_data["game1_score"] = total_score
+	GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
 	pass # Replace with function body.

@@ -1,0 +1,29 @@
+[
+	{
+		"session_id": "20251119_001",
+		"name": "Dhruvesh",
+		"game1_score": 15,
+		"game2_score": 20,
+		"game3_score": 18,
+		"game4_score": 12,
+		"game5_score": 25
+	},
+	{
+		"session_id": "20251119_002",
+		"name": "Alice",
+		"game1_score": 12,
+		"game2_score": 17,
+		"game3_score": 19,
+		"game4_score": 20,
+		"game5_score": 22
+	},
+	{
+		"session_id": "20251119_003",
+		"name": "Bob",
+		"game1_score": 10,
+		"game2_score": 15,
+		"game3_score": 13,
+		"game4_score": 18,
+		"game5_score": 20
+	}
+]

@@ -145,4 +145,5 @@ text = "Quit
 [connection signal="pressed" from="CenterContainer/LevelsMenu/Level4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="CenterContainer/LevelsMenu/Level5" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="CenterContainer/LevelsMenu/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CenterContainer2/MainButtons/Statistics" to="." method="_on_statistics_pressed"]
 [connection signal="pressed" from="CenterContainer2/MainButtons/Quit" to="." method="_on_quit_pressed"]
