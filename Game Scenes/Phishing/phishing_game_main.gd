@@ -88,7 +88,7 @@ func load_email() -> Array:
 			
 		#pick a random 15 mails
 		result.shuffle()
-		return result.slice(0, 3) # to change back to 15
+		return result.slice(0, 15) # to change back to 15
 	else:
 		push_error("Invalid JSON format: Expected an Array")
 		return []

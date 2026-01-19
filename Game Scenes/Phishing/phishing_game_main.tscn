@@ -276,7 +276,7 @@ autowrap_mode = 3
 
 [node name="Dialogue" parent="." instance=ExtResource("3_3u4ww")]
 visible = false
-d_file = "res://Game Scenes/Phishing/phishing_dialogue.JSON"
+d_file = "res://Gamie Scenes/Phishing/phshing_dialogue.JSON"
 
 [node name="HoverPanel" type="Panel" parent="."]
 custom_minimum_size = Vector2(350, 0)

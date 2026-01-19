@@ -1,12 +1,12 @@
-ColorRect
 Label
+Panel
+Control
+Button
+ColorRect
 RichTextLabel
 MarginContainer
 VBoxContainer
-Button
-Panel
 Timer
-Control
 TextureRect
 LineEdit
 Popup

@@ -1,7 +1,7 @@
+res://MainMenu/main_menu.tscn
 res://MainMenu/Font/Main_Menu_NAME_100px.tres
 res://Resources/PinkTheme.tres
 res://Game Scenes/Phishing/score_label.tres
-res://MainMenu/main_menu.tscn
 res://MainMenu/exit.tscn
 res://Game Scenes/test_pw.tscn
 res://Game Scenes/Phishing/phishing_game_main.tscn
@@ -9,5 +9,6 @@ res://dialogue/dialogue.tscn
 res://MainMenu/login.tscn
 res://Game Scenes/Phishing/card.tscn
 res://MainMenu/Leaderboard.tscn
-res://MainMenu/leaderboard.gd
-res://MainMenu/Font/main_menu.gd
+res://Game Scenes/Password/password_game.tscn
+res://Game Scenes/Password/password_game.gd
+res://Game Scenes/Phishing/phishing_game_main.gd
