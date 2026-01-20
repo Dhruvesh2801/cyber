@@ -1,0 +1,92 @@
+[
+  {
+    "context": "You receive a message during work hours from someone claiming to be internal IT.",
+    "attacker_line": "Hi, this is IT Support.\n\nWe detected unusual activity\non your account.\n\nPlease confirm your login details.",
+    "options": [
+      "Provide the login details immediately",
+      "Ask for an official ticket number or contact IT directly",
+      "Ignore the message"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Attackers often impersonate IT.\nCredentials should never be shared.",
+      "Correct.\nAlways verify requests using trusted channels.",
+      "Ignoring avoids danger but reporting is safer."
+    ]
+  },
+  {
+    "context": "An email arrives claiming your account is about to be disabled.",
+    "attacker_line": "Good afternoon.\n\nYour email account will be\nsuspended within 30 minutes\nunless we verify your identity.",
+    "options": [
+      "Reply quickly with the requested information",
+      "Click the verification link in the email",
+      "Check the sender details and report the message"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "Urgency is used to pressure victims into mistakes.",
+      "Links are a common phishing technique.",
+      "Correct.\nAlways inspect and report suspicious messages."
+    ]
+  },
+  {
+    "context": "You receive a friendly chat message that seems informal and harmless.",
+    "attacker_line": "Hey!\nI’m from the internal IT team 😊\n\nQuick check — are you\nworking remotely today?",
+    "options": [
+      "Answer casually to be helpful",
+      "Ask why this information is needed",
+      "Provide your location and device details"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Small personal details can be exploited later.",
+      "Correct.\nQuestion the intent behind requests.",
+      "This information helps attackers build a profile."
+    ]
+  },
+  {
+    "context": "Someone claims to be from management and requests urgent access.",
+    "attacker_line": "Hi, this is Mark from Finance.\n\nI urgently need access\nto a document you manage.\nThe CEO is waiting.",
+    "options": [
+      "Grant access immediately due to urgency",
+      "Verify the request through official company channels",
+      "Send the document via personal email"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Authority pressure is a common manipulation tactic.",
+      "Correct.\nUrgency does not override security procedures.",
+      "Personal email is not a secure method."
+    ]
+  },
+  {
+    "context": "You receive a security alert claiming your account is under attack.",
+    "attacker_line": "Security Alert!\n\nMultiple failed login attempts\nwere detected from your account.\n\nReply ASAP to secure it.",
+    "options": [
+      "Reply asking for more details",
+      "Reset your password using the official system",
+      "Send your password to stop the attack"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Engaging directly keeps the attacker in control.",
+      "Correct.\nAlways use trusted internal systems.",
+      "Passwords should never be shared."
+    ]
+  },
+  {
+    "context": "A message claims to be part of a routine company audit.",
+    "attacker_line": "Morning!\n\nWe’re conducting a quick audit.\n\nCan you confirm your\nemployee ID number?",
+    "options": [
+      "Ask who authorized the audit and verify it",
+      "Provide the ID to avoid delays",
+      "Ignore the message"
+    ],
+    "correct_index": 0,
+    "feedback": [
+      "Correct.\nLegitimate audits can always be verified.",
+      "Even basic identifiers can be misused.",
+      "Ignoring avoids risk but reporting is better."
+    ]
+  }
+]

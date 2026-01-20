@@ -65,6 +65,8 @@ func _ready() -> void:
 		
 func _process(delta: float) -> void:
 	timer_label.text = str(total_time)
+	if total_time <=0:
+		timer.stop()
 	pass	
 	
 
@@ -88,7 +90,7 @@ func load_email() -> Array:
 			
 		#pick a random 15 mails
 		result.shuffle()
-		return result.slice(0, 15) # to change back to 15
+		return result.slice(0, 3) # to change back to 15
 	else:
 		push_error("Invalid JSON format: Expected an Array")
 		return []
@@ -232,4 +234,16 @@ func _on_main_menu_pressed() -> void:
 	GlobalVariables.session_data["game1_score"] = total_score
 	GlobalVariables.save_current_session_to_file()
 	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
+	pass # Replace with function body.
+
+
+func _on_retry_pressed() -> void:
+	get_tree().change_scene_to_file("res://Game Scenes/Phishing/phishing_game_main.tscn")
+	pass # Replace with function body.
+
+
+func _on_next_level_pressed() -> void:
+	GlobalVariables.session_data["game1_score"] = total_score
+	#GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://Game Scenes/Password/password_game.tscn")
 	pass # Replace with function body.

@@ -1,13 +1,13 @@
 Label
 Panel
 Control
+MarginContainer
 Button
+VBoxContainer
+TextureRect
 ColorRect
 RichTextLabel
-MarginContainer
-VBoxContainer
 Timer
-TextureRect
 LineEdit
 Popup
 HBoxContainer

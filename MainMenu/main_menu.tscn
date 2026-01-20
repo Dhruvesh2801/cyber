@@ -81,7 +81,7 @@ text = "Phishing"
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 2"
+text = "Password"
 
 [node name="Level3" type="Button" parent="CenterContainer/LevelsMenu"]
 custom_minimum_size = Vector2(200, 50)
@@ -137,6 +137,7 @@ theme_override_font_sizes/font_size = 40
 text = "Quit
 "
 
+[connection signal="pressed" from="CenterContainer/MainButtons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="CenterContainer/MainButtons/Levels" to="." method="_on_levels_pressed"]
 [connection signal="pressed" from="CenterContainer/MainButtons/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="CenterContainer/LevelsMenu/Level1" to="." method="_on_level_1_pressed"]

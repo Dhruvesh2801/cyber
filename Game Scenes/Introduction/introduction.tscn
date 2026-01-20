@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0t1l6tsifed6"]
+
+[ext_resource type="Texture2D" uid="uid://tiiskxp5imlq" path="res://Game Scenes/Introduction/cybersecurity.png" id="1_0auyf"]
+[ext_resource type="Script" uid="uid://b8wke4gieykv3" path="res://Game Scenes/Introduction/introduction.gd" id="1_bstqk"]
+[ext_resource type="PackedScene" uid="uid://q0chcul4t876" path="res://dialogue/dialogue.tscn" id="2_o5c47"]
+[ext_resource type="FontFile" uid="uid://dlxeofevbk4t2" path="res://MainMenu/Font/LuckiestGuy-Regular.ttf" id="3_o5c47"]
+
+[node name="Introduction" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bstqk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0auyf")
+
+[node name="Dialogue" parent="." instance=ExtResource("2_o5c47")]
+visible = false
+d_file = "res://Game Scenes/Introduction/intro_dialoge.json"
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(400, 75)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 190.0
+offset_right = 200.0
+offset_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_o5c47")
+theme_override_font_sizes/font_size = 35
+text = "PRESS TO START"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

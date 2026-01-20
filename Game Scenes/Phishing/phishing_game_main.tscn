@@ -276,7 +276,7 @@ autowrap_mode = 3
 
 [node name="Dialogue" parent="." instance=ExtResource("3_3u4ww")]
 visible = false
-d_file = "res://Gamie Scenes/Phishing/phshing_dialogue.JSON"
+d_file = "res://Game Scenes/Phishing/phishing_dialogue.JSON"
 
 [node name="HoverPanel" type="Panel" parent="."]
 custom_minimum_size = Vector2(350, 0)
@@ -462,4 +462,6 @@ text = "NEXT LEVEL"
 [connection signal="pressed" from="PhishButton" to="." method="_on_phish_button_pressed"]
 [connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="FinalScorePanel/retry" to="." method="_on_retry_pressed"]
 [connection signal="pressed" from="FinalScorePanel/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="FinalScorePanel/next_level" to="." method="_on_next_level_pressed"]

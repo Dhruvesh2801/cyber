@@ -1,23 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1768806061
+::res://::1768902740
 exit.gd::GDScript/GDScript::248294828190384525::1754241360::0::1::::<>Control<><>0<>0<><>::
 Flow.txt::TextFile/TextFile::-1::1756745384::0::1::::<><><>0<>0<><>::
 githuburl.txt::TextFile/TextFile::-1::1755921482::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2202254586664994406::1753900206::1753900210::1::::<><><>0<>0<>bae6a62ddad6e3fbb1f29cbc96bdaca4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 robot.gd::GDScript/GDScript::-1::1753728929::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
-robot.tscn::PackedScene/PackedScene::-1::1755162702::0::1::::<><><>0<>0<><>::
+robot.tscn::PackedScene::4940169731867861519::1768890796::0::1::::<><><>0<>0<><>::uid://cqwbx663jdy6r::::res://MainMenu/asset/Pink_robo_animates.png<>res://robot.gd
+robot_grey.tscn::PackedScene::7552924181611624674::1768890796::0::1::::<><><>0<>0<><>::uid://dpt4313ioshcv::::res://dialogue/asset/grey_robo_animates.png<>res://robot.gd
 scores.json::JSON/JSON::-1::1763581377::0::1::::<><><>0<>0<><>::
-::res://dialogue/::1768821202
-dialogue.gd::GDScript/GDScript::1097527450556359391::1756756786::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://dialogue/::1768890796
+dialogue.gd::GDScript::1097527450556359391::1768827268::0::1::::<>CanvasLayer<><>0<>0<><>::
 dialogue.JSON::JSON/JSON::-1::1753728810::0::1::::<><><>0<>0<><>::
-dialogue.tscn::PackedScene::1174765013084997803::1768821202::0::1::::<><><>0<>0<><>::uid://pvwd78epm3kl::::res://dialogue/dialogue.gd<>res://robot.tscn<>uid://dfoo8kko7mbwl::::res://MainMenu/asset/Dialog2.png<>uid://bnaq08meww6dl::::res://MainMenu/asset/Next_button.png<>uid://hajtr8kppa4x::::res://MainMenu/asset/Next_button_press.png<>uid://ecy5sqd0c1w5::::res://MainMenu/asset/Next_button_hover.png<>uid://5ccgk8ruls1n::::res://MainMenu/Font/Button_FONT.tres
+dialogue.tscn::PackedScene::1174765013084997803::1768890795::0::1::::<><><>0<>0<><>::uid://pvwd78epm3kl::::res://dialogue/dialogue.gd<>uid://ccnb4yasgn81p::::res://robot.tscn<>uid://dfoo8kko7mbwl::::res://MainMenu/asset/Dialog2.png<>uid://bnaq08meww6dl::::res://MainMenu/asset/Next_button.png<>uid://hajtr8kppa4x::::res://MainMenu/asset/Next_button_press.png<>uid://ecy5sqd0c1w5::::res://MainMenu/asset/Next_button_hover.png<>uid://5ccgk8ruls1n::::res://MainMenu/Font/Button_FONT.tres
+dialogue_2.tscn::PackedScene::7632547423498300088::1768890796::0::1::::<><><>0<>0<><>::uid://pvwd78epm3kl::::res://dialogue/dialogue.gd<>uid://dfuxs7117vqfq::::res://robot_grey.tscn<>uid://dfoo8kko7mbwl::::res://MainMenu/asset/Dialog2.png<>uid://bnaq08meww6dl::::res://MainMenu/asset/Next_button.png<>uid://hajtr8kppa4x::::res://MainMenu/asset/Next_button_press.png<>uid://ecy5sqd0c1w5::::res://MainMenu/asset/Next_button_hover.png<>uid://5ccgk8ruls1n::::res://MainMenu/Font/Button_FONT.tres
 dialogue_box.png::CompressedTexture2D/CompressedTexture2D::3973378493948624829::1752512053::1755162702::1::::<><><>0<>0<>70f40add85ef7a725df95afc0410c114<>res://.godot/imported/dialogue_box.png-630bb3b49dc179fc79045c28ff9ed16d.ctex::
-::res://dialogue/asset/::1756411190
+::res://dialogue/asset/::1768835140
 7ae6d046-c5c7-4c48-9047-e526b7cefcc8.png::CompressedTexture2D/CompressedTexture2D::5055636770188676510::1752932559::1755162702::1::::<><><>0<>0<>d75901ee105d91731d8385020d078e5f<>res://.godot/imported/7ae6d046-c5c7-4c48-9047-e526b7cefcc8.png-c4885dd571546a77c5b7d1cee6993f23.ctex::
 Correct.png::CompressedTexture2D/CompressedTexture2D::3275490417521747445::1755184642::1755184654::1::::<><><>0<>0<>9173ffcf812c55449ab8ef8211499b9d<>res://.godot/imported/Correct.png-6f88013e8fe595390b93e8d4ff330fab.ctex::
 Dialog1.png::CompressedTexture2D/CompressedTexture2D::350505157828451967::1752606640::1755162702::1::::<><><>0<>0<>f875340a378deb1aa1b1a1f96ad583ec<>res://.godot/imported/Dialog1.png-8b33171a51440a76d4f3db859ec4ec77.ctex::
 Dialog2.png::CompressedTexture2D/CompressedTexture2D::7540017068284771867::1752607940::1755162702::1::::<><><>0<>0<>9cbd64bb9b381acd38e7a303f71c5a51<>res://.godot/imported/Dialog2.png-36af7f37748f385eb1335ed27fd79fae.ctex::
 frames.png::CompressedTexture2D/CompressedTexture2D::4475128779669542941::1752606442::1755162702::0::::<><><>0<>0<>226d92574e4b8d5ab6d93499fdfa2929<>::
+grey_robo_animates.png::CompressedTexture2D/CompressedTexture2D::8253130087241024357::1768835132::1768835140::1::::<><><>0<>0<>4a10b9df4653240df0ba849bc70941b5<>res://.godot/imported/grey_robo_animates.png-b0e9be8995bd1608c2019bb6bfd64768.ctex::
 Next_button.png::CompressedTexture2D/CompressedTexture2D::3299893519739657341::1752918587::1755162702::1::::<><><>0<>0<>d42173ed61b44ea77a3cdf31888ab2d9<>res://.godot/imported/Next_button.png-7277826b6fe11fa71b9452c322d4d011.ctex::
 Next_button_hover.png::CompressedTexture2D/CompressedTexture2D::286395882010788466::1752928264::1755162702::1::::<><><>0<>0<>a38b6a8ad5a763f26e9f3baab0f639cd<>res://.godot/imported/Next_button_hover.png-a2c5d9ce2404ebe9a4cb5961889565bf.ctex::
 Next_button_press.png::CompressedTexture2D/CompressedTexture2D::491903232835805913::1752928304::1755162702::1::::<><><>0<>0<>c68fcc57635fdd4fec02df8216e83c78<>res://.godot/imported/Next_button_press.png-3a1e8727884d8ba99ae84269a109576e.ctex::
@@ -28,39 +31,46 @@ Wrong.png::CompressedTexture2D/CompressedTexture2D::3952132762487495736::1755184
 ::res://dialogue/Font/::1755162702
 Button_FONT.tres::LabelSettings/LabelSettings::2109926790409683521::1754940626::0::1::::<><><>0<>0<><>::uid://dlxeofevbk4t2::::res://dialogue/Font/LuckiestGuy-Regular.ttf
 LuckiestGuy-Regular.ttf::FontFile/FontFile::7979088158278644501::1749931862::1755162702::1::::<><><>0<>0<>3fbd91f81a4d4ccc64cf573e6be3c3a2<>res://.godot/imported/LuckiestGuy-Regular.ttf-daf592cf8c2fd5ce29f231a1f5ce7b8d.fontdata::
-::res://Game Scenes/::1768821202
+::res://Game Scenes/::1768890795
 test_pw2.tscn::PackedScene/PackedScene::2313436816454365974::1753986699::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
 test_pw3.tscn::PackedScene/PackedScene::4545681560645243176::1753986699::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
 test_pw4.tscn::PackedScene/PackedScene::3915365163951940589::1753986698::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
 test_pw5.tscn::PackedScene/PackedScene::6792851392650196748::1753986707::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
-test_pw.tscn::PackedScene::5623587626777340683::1768821202::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://dr57x3n4b46j7::::res://MainMenu/exit.tscn
-::res://Game Scenes/Password/::1768821361
-passwords.json::JSON::-1::1768820403::0::1::::<><><>0<>0<><>::
-password_dialogue - Copy.json::JSON::-1::1768812806::0::1::::<><><>0<>0<><>::
-password_dialogue.json::JSON::-1::1768817098::0::1::::<><><>0<>0<><>::
-password_game.tscn::PackedScene::9109644320336985152::1768821202::0::1::::<><><>0<>0<><>::uid://q0chcul4t876::::res://dialogue/dialogue.tscn<>uid://dgqnnlrjl7jrs::::res://Game Scenes/Password/password_game.gd<>uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
-password_game.gd::GDScript::7614238297642595464::1768821075::0::1::::<>Control<><>0<>0<><>::
-VIEMON.ttf::FontFile::7205086345075299350::1768821361::1768821363::1::::<><><>0<>0<>b3ae71b07827a845cf89422d55a7674b<>res://.godot/imported/VIEMON.ttf-3bf76c984e9ebafa7b17f767cee58dab.fontdata::
-::res://Game Scenes/Phishing/::1768821202
+test_pw.tscn::PackedScene::5623587626777340683::1768890795::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://dr57x3n4b46j7::::res://MainMenu/exit.tscn
+::res://Game Scenes/Introduction/::1768890796
+cybersecurity.png::CompressedTexture2D/CompressedTexture2D::1350621492873466486::1768829274::1768829279::1::::<><><>0<>0<>b46bc2fbc3a03127bebd6deeb6a7c86a<>res://.godot/imported/cybersecurity.png-f8279eabde76dfe24db9bc6afbd8f62c.ctex::
+introduction.gd::GDScript::4748684680256534030::1768829782::0::1::::<>Control<><>0<>0<><>::
+introduction.tscn::PackedScene::8954806263305998397::1768890796::0::1::::<><><>0<>0<><>::uid://tiiskxp5imlq::::res://Game Scenes/Introduction/cybersecurity.png<>uid://b8wke4gieykv3::::res://Game Scenes/Introduction/introduction.gd<>uid://q0chcul4t876::::res://dialogue/dialogue.tscn<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf
+intro_dialoge.json::JSON/JSON::-1::1768829143::0::1::::<><><>0<>0<><>::
+::res://Game Scenes/New folder/::1768834226
+::res://Game Scenes/Password/::1768890796
+passwords.json::JSON::-1::1768892453::0::1::::<><><>0<>0<><>::
+password_dialogue - Copy.json::JSON/JSON::-1::1768812806::0::1::::<><><>0<>0<><>::
+password_dialogue.json::JSON/JSON::-1::1768817098::0::1::::<><><>0<>0<><>::
+password_game.gd::GDScript::7614238297642595464::1768890793::0::1::::<>Control<><>0<>0<><>::
+password_game.tscn::PackedScene::9109644320336985152::1768890796::0::1::::<><><>0<>0<><>::uid://q0chcul4t876::::res://dialogue/dialogue.tscn<>uid://dgqnnlrjl7jrs::::res://Game Scenes/Password/password_game.gd<>uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf<>uid://dawgypwmlmqre::::res://Game Scenes/Password/VIEMON.ttf<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
+VIEMON.ttf::FontFile/FontFile::7205086345075299350::1768821361::1768821363::1::::<><><>0<>0<>b3ae71b07827a845cf89422d55a7674b<>res://.godot/imported/VIEMON.ttf-3bf76c984e9ebafa7b17f767cee58dab.fontdata::
+::res://Game Scenes/Phishing/::1768890795
 card.gd::GDScript/GDScript::1503639990685732405::1755186676::0::1::::card<>Control<><>0<>0<><>::
-card.tscn::PackedScene::8363081738378365419::1768821202::0::1::::<><><>0<>0<><>::uid://vomy38y5kpaj::::res://Game Scenes/Phishing/card.gd<>uid://bmww34ahnekdx::::res://dialogue/asset/Correct.png
+card.tscn::PackedScene::8363081738378365419::1768828489::0::1::::<><><>0<>0<><>::uid://vomy38y5kpaj::::res://Game Scenes/Phishing/card.gd<>uid://bmww34ahnekdx::::res://dialogue/asset/Correct.png
 phishing.JSON::JSON/JSON::-1::1755181638::0::1::::<><><>0<>0<><>::
 phishing_dialogue - Copy.JSON::JSON/JSON::-1::1755168047::0::1::::<><><>0<>0<><>::
-phishing_dialogue.JSON::JSON/JSON::-1::1763574561::0::1::::<><><>0<>0<><>::
-phishing_game_main.gd::GDScript::5402257797271048787::1768815140::0::1::::<>Control<><>0<>0<><>::
-phishing_game_main.tscn::PackedScene::502859676027338072::1768821202::0::1::::<><><>0<>0<><>::uid://cscf0vq7gv2ht::::res://Resources/PinkTheme.tres<>uid://ci75nqrucgt1d::::res://Game Scenes/Phishing/phishing_game_main.gd<>uid://q0chcul4t876::::res://dialogue/dialogue.tscn<>uid://drfey76wqild0::::res://Game Scenes/Phishing/card.tscn<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres
-score_label.tres::LabelSettings::1439740208176313361::1768821200::0::1::::<><><>0<>0<><>::uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
+phishing_dialogue.JSON::JSON/JSON::-1::1768827423::0::1::::<><><>0<>0<><>::
+phishing_game_main.gd::GDScript::5402257797271048787::1768833692::0::1::::<>Control<><>0<>0<><>::
+phishing_game_main.tscn::PackedScene::502859676027338072::1768890795::0::1::::<><><>0<>0<><>::uid://cscf0vq7gv2ht::::res://Resources/PinkTheme.tres<>uid://ci75nqrucgt1d::::res://Game Scenes/Phishing/phishing_game_main.gd<>uid://q0chcul4t876::::res://dialogue/dialogue.tscn<>uid://drfey76wqild0::::res://Game Scenes/Phishing/card.tscn<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres
+score_label.tres::LabelSettings::1439740208176313361::1768821451::0::1::::<><><>0<>0<><>::uid://dawgypwmlmqre::::res://Game Scenes/Password/VIEMON.ttf
+::res://Game Scenes/Social Engineering/::1768890581
 ::res://Globals/::1768813956
+final_score_panel.tscn::PackedScene/PackedScene::3407864370735789900::1768813956::0::1::::<><><>0<>0<><>::uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf
 GlobalVariables.gd::GDScript/GDScript::1944761443364313947::1763582375::0::1::::<>Node<><>0<>0<><>::
-final_score_panel.tscn::PackedScene::3407864370735789900::1768813956::0::1::::<><><>0<>0<><>::uid://uroktm3eaxo0::::res://Game Scenes/Phishing/score_label.tres<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf
 SignalManager.gd::GDScript/GDScript::9210236621414982961::1755984195::0::1::::<>Node<><>0<>0<><>::
-::res://MainMenu/::1768821202
-exit.tscn::PackedScene::8416389234632387494::1768821202::0::1::::<><><>0<>0<><>::uid://dsjm50ujcwgj::::res://exit.gd
-leaderboard.gd::GDScript::1767945855577421760::1764093112::0::1::::<>Control<><>0<>0<><>::
-Leaderboard.tscn::PackedScene::8642473894830140644::1768821202::0::1::::<><><>0<>0<><>::uid://0gn2sj6vtga7::::res://MainMenu/leaderboard.gd<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
+::res://MainMenu/::1768890796
+exit.tscn::PackedScene::8416389234632387494::1768890795::0::1::::<><><>0<>0<><>::uid://dsjm50ujcwgj::::res://exit.gd
+leaderboard.gd::GDScript/GDScript::1767945855577421760::1764093112::0::1::::<>Control<><>0<>0<><>::
+Leaderboard.tscn::PackedScene::8642473894830140644::1768890796::0::1::::<><><>0<>0<><>::uid://0gn2sj6vtga7::::res://MainMenu/leaderboard.gd<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres
 login.gd::GDScript/GDScript::8607049183314230839::1763581010::0::1::::<>Control<><>0<>0<><>::
-login.tscn::PackedScene::5109869822846809952::1768821202::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://duvk3v8lj8jcx::::res://MainMenu/login.gd<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
-main_menu.tscn::PackedScene::5780827233398484380::1768821201::0::1::::<><><>0<>0<><>::uid://cseo3te85iwhn::::res://MainMenu/Font/main_menu.gd<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
+login.tscn::PackedScene::5109869822846809952::1768828489::0::1::::<><><>0<>0<><>::uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://duvk3v8lj8jcx::::res://MainMenu/login.gd<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
+main_menu.tscn::PackedScene::5780827233398484380::1768890795::0::1::::<><><>0<>0<><>::uid://cseo3te85iwhn::::res://MainMenu/Font/main_menu.gd<>uid://6i4uxhfky4l0::::res://MainMenu/Font/Main_Menu_NAME_100px.tres<>uid://8swg6l30n6tg::::res://MainMenu/Font/CyberTechnoDemo-Regular.otf
 ::res://MainMenu/asset/::1753900675
 7ae6d046-c5c7-4c48-9047-e526b7cefcc8.png::CompressedTexture2D/CompressedTexture2D::5055636770188676510::1752932559::1753900675::1::::<><><>0<>0<>8e433b3429d4f4cbb124e77564342fd7<>res://.godot/imported/7ae6d046-c5c7-4c48-9047-e526b7cefcc8.png-27437fd05e6d922ac1308bb58a81b753.ctex::
 Dialog1.png::CompressedTexture2D/CompressedTexture2D::350505157828451967::1752606640::1753900675::1::::<><><>0<>0<>097367d7c0434192b6357fd2311c0272<>res://.godot/imported/Dialog1.png-d2752c82a15fb478e3c81c8915a99f46.ctex::
@@ -72,11 +82,11 @@ Next_button_press.png::CompressedTexture2D/CompressedTexture2D::4919032328358059
 Pink_robot.png::CompressedTexture2D/CompressedTexture2D::381825273005160584::1752934713::1753900675::1::::<><><>0<>0<>00fad3bc1793e47926989d7b21034e44<>res://.godot/imported/Pink_robot.png-471ef9c3488592f76082627907dcc237.ctex::
 Pink_robo_animates.png::CompressedTexture2D/CompressedTexture2D::5941382643833771383::1753034975::1753900675::1::::<><><>0<>0<>e4012005f1548861641949095b54b0b9<>res://.godot/imported/Pink_robo_animates.png-90fa5dd8270276654170df1c14ea7b0a.ctex::
 tunetank.com_junkyard-robot-communication-(short).wav::AudioStreamWAV/AudioStreamWAV::3284540692888945977::1753035707::1753900675::1::::<><><>0<>0<>7e0c4921da2d0d1bbb8189c19e98f1b3<>res://.godot/imported/tunetank.com_junkyard-robot-communication-(short).wav-2863ad58b3a113acbdc4d609553d93d6.sample::
-::res://MainMenu/Font/::1768806071
+::res://MainMenu/Font/::1768833012
 Button_FONT.tres::LabelSettings/LabelSettings::2109926790409683521::1753901754::0::1::::<><><>0<>0<><>::uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf
 CyberTechnoDemo-Regular.otf::FontFile/FontFile::2354738774755286976::1753901531::1753901534::1::::<><><>0<>0<>d26b821f35064a684338880ac5f0331e<>res://.godot/imported/CyberTechnoDemo-Regular.otf-b93cf6ded0026d6646e3be26c365b814.fontdata::
 LuckiestGuy-Regular.ttf::FontFile/FontFile::7979088158278644501::1749931862::1753900675::1::::<><><>0<>0<>8d0de32bf7ea92d70505419367bea49f<>res://.godot/imported/LuckiestGuy-Regular.ttf-430272e331ee17c245e61cc63baee273.fontdata::
-main_menu.gd::GDScript::6045399109677761299::1764091640::0::1::::<>Control<><>0<>0<><>::
+main_menu.gd::GDScript::6045399109677761299::1768833012::0::1::::<>Control<><>0<>0<><>::
 Main_Menu_NAME_100px.tres::LabelSettings::2194166902572009411::1768806071::0::1::::<><><>0<>0<><>::uid://dlxeofevbk4t2::::res://MainMenu/Font/LuckiestGuy-Regular.ttf
 ::res://Resources/::1768806071
 PinkTheme.tres::Theme::6040718667360391413::1768806071::0::1::::<><><>0<>0<><>::

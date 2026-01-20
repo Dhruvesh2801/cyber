@@ -10,6 +10,7 @@ var password_data: Array = []  # Will store the whole JSON array
 @onready var current_pw: Label = $current_pw
 
 
+
 @onready var tip: Label = $tip_panel/tip
 @onready var tip_panel: Panel = $tip_panel
 
@@ -20,6 +21,17 @@ var tip3: String
 var tips: Array
 
 
+var total_score: int
+
+@onready var final_score_panel: Panel = $FinalScorePanel
+@onready var final_score_text: Label = $FinalScorePanel/Score/FinalScoreText
+
+
+@onready var main_menu: Button = $FinalScorePanel/main_menu
+@onready var retry: Button = $FinalScorePanel/retry
+@onready var next_level: Button = $FinalScorePanel/next_level
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	dialogue.show()
@@ -27,7 +39,7 @@ func _ready() -> void:
 	SignalManager.DialogueEnded.connect(game_start)
 	password_data = load_passwords()
 	tip_panel.hide()
-	
+	final_score_panel.hide()
 	if password_data.is_empty():
 		push_error("No passwords loaded")
 	else:
@@ -46,7 +58,7 @@ func game_start()-> void:
 
 func load_passwords()-> Array:
 	if not FileAccess.file_exists(e_file):
-		push_error("Email file not found: " + e_file)
+		push_error("PW file not found: " + e_file)
 		return []
 		
 	var file = FileAccess.open(e_file, FileAccess.READ)
@@ -64,7 +76,8 @@ func load_passwords()-> Array:
 	
 func show_password() -> void:
 	if password_data.is_empty():
-		print("No more emails left!")
+		print("No more passwords left!")
+		game_end()
 		return
 	randomize()
 	var index = randi() % password_data.size()
@@ -86,7 +99,9 @@ func check_answer(ans: int) ->void:
 	var tip = tips[ans]
 	if ans == correct_pw_index:
 		display_tip(tip)
+		total_score +=15
 		show_password()
+		
 	else:
 		display_tip(tip)
 		await get_tree().create_timer(2).timeout
@@ -106,3 +121,41 @@ func _on_pw_2_pressed() -> void:
 	check_answer(1)
 func _on_pw_3_pressed() -> void:
 	check_answer(2)
+	
+
+
+func game_end () ->void:
+	final_score_text.text = str(total_score)
+	final_score_panel.show()
+	show_buttons()
+	
+
+
+func _on_retry_pressed() -> void:
+	get_tree().change_scene_to_file("res://Game Scenes/Password/password_game.tscn")
+	pass # Replace with function body.
+
+
+func _on_main_menu_pressed() -> void:
+	GlobalVariables.session_data["game2_score"] = total_score
+	GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
+	pass # Replace with function body.
+
+
+func _on_next_level_pressed() -> void:
+	GlobalVariables.session_data["game2_score"] = total_score
+	GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://Game Scenes/Password/password_game.tscn")# to change this scene later
+	pass # Replace with function body.
+
+func show_buttons():
+	if GlobalVariables.is_campaign == true:
+		retry.hide()
+		main_menu.hide()
+		next_level.show()
+	else:
+		retry.show()
+		main_menu.show()
+		next_level.hide()
+	pass
