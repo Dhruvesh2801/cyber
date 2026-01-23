@@ -280,3 +280,6 @@ text = "NEXT LEVEL"
 [connection signal="pressed" from="VBoxContainer/Option1" to="." method="_on_option_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Option2" to="." method="_on_option_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Option3" to="." method="_on_option_3_pressed"]
+[connection signal="pressed" from="FinalScorePanel/retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="FinalScorePanel/main_menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="FinalScorePanel/next_level" to="." method="_on_next_level_pressed"]

@@ -19,74 +19,284 @@
     "attacker_line": "Good afternoon.\n\nYour email account will be\nsuspended within 30 minutes\nunless we verify your identity.",
     "options": [
       "Reply quickly with the requested information",
-      "Click the verification link in the email",
-      "Check the sender details and report the message"
+      "Click the verification link",
+      "Check the sender details and report the email"
     ],
     "correct_index": 2,
     "feedback": [
-      "Urgency is used to pressure victims into mistakes.",
-      "Links are a common phishing technique.",
-      "Correct.\nAlways inspect and report suspicious messages."
+      "Urgency is used to pressure victims.",
+      "Links are common phishing tools.",
+      "Correct.\nInspection and reporting is the safest action."
     ]
   },
   {
-    "context": "You receive a friendly chat message that seems informal and harmless.",
-    "attacker_line": "Hey!\nI’m from the internal IT team 😊\n\nQuick check — are you\nworking remotely today?",
+    "context": "A friendly message appears on internal chat.",
+    "attacker_line": "Hey!\nI’m from the IT team 😊\n\nQuick check — are you\nworking remotely today?",
     "options": [
-      "Answer casually to be helpful",
-      "Ask why this information is needed",
-      "Provide your location and device details"
+      "Answer casually",
+      "Ask why the information is needed",
+      "Share your location and device"
     ],
     "correct_index": 1,
     "feedback": [
-      "Small personal details can be exploited later.",
-      "Correct.\nQuestion the intent behind requests.",
-      "This information helps attackers build a profile."
+      "Casual replies can still leak information.",
+      "Correct.\nQuestion the intent.",
+      "This helps attackers build a profile."
     ]
   },
   {
-    "context": "Someone claims to be from management and requests urgent access.",
+    "context": "Someone claims to be from finance and sounds urgent.",
     "attacker_line": "Hi, this is Mark from Finance.\n\nI urgently need access\nto a document you manage.\nThe CEO is waiting.",
     "options": [
-      "Grant access immediately due to urgency",
-      "Verify the request through official company channels",
+      "Grant access immediately",
+      "Verify the request through official channels",
       "Send the document via personal email"
     ],
     "correct_index": 1,
     "feedback": [
-      "Authority pressure is a common manipulation tactic.",
-      "Correct.\nUrgency does not override security procedures.",
-      "Personal email is not a secure method."
+      "Authority pressure is a red flag.",
+      "Correct.\nUrgency does not bypass security.",
+      "Personal email is insecure."
     ]
   },
   {
-    "context": "You receive a security alert claiming your account is under attack.",
+    "context": "You receive a security alert via email.",
     "attacker_line": "Security Alert!\n\nMultiple failed login attempts\nwere detected from your account.\n\nReply ASAP to secure it.",
     "options": [
-      "Reply asking for more details",
-      "Reset your password using the official system",
-      "Send your password to stop the attack"
+      "Reply asking what happened",
+      "Reset your password via the official system",
+      "Send your password"
     ],
     "correct_index": 1,
     "feedback": [
-      "Engaging directly keeps the attacker in control.",
-      "Correct.\nAlways use trusted internal systems.",
-      "Passwords should never be shared."
+      "Replying keeps the attacker engaged.",
+      "Correct.\nUse trusted internal tools.",
+      "Passwords must never be shared."
     ]
   },
   {
-    "context": "A message claims to be part of a routine company audit.",
+    "context": "A message claims to be part of a company audit.",
     "attacker_line": "Morning!\n\nWe’re conducting a quick audit.\n\nCan you confirm your\nemployee ID number?",
     "options": [
-      "Ask who authorized the audit and verify it",
-      "Provide the ID to avoid delays",
+      "Ask who authorized the audit",
+      "Provide the ID",
       "Ignore the message"
     ],
     "correct_index": 0,
     "feedback": [
-      "Correct.\nLegitimate audits can always be verified.",
-      "Even basic identifiers can be misused.",
+      "Correct.\nAudits are always verifiable.",
+      "Even IDs can be exploited.",
       "Ignoring avoids risk but reporting is better."
+    ]
+  },
+  {
+    "context": "A caller claims to be a new intern.",
+    "attacker_line": "Hi!\nI just joined today 😅\n\nI can’t access the system.\nCan you help me log in?",
+    "options": [
+      "Help them log in",
+      "Redirect them to IT support",
+      "Ask for their password"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Helping directly bypasses controls.",
+      "Correct.\nNew users must go through IT.",
+      "Passwords should never be requested."
+    ]
+  },
+  {
+    "context": "You receive a late-night message.",
+    "attacker_line": "Sorry to bother you late.\n\nThis is urgent.\nI need quick access\nbefore a deadline.",
+    "options": [
+      "Comply due to urgency",
+      "Ask for written authorization",
+      "Share limited access"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Urgency is used to override judgment.",
+      "Correct.\nAuthorization protects you.",
+      "Partial access is still risky."
+    ]
+  },
+  {
+    "context": "A delivery issue email arrives.",
+    "attacker_line": "Delivery failed.\n\nPlease open the attachment\nfor more details.",
+    "options": [
+      "Open the attachment",
+      "Forward to colleagues",
+      "Report the email"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "Attachments are common malware vectors.",
+      "Spreading increases risk.",
+      "Correct.\nReporting prevents damage."
+    ]
+  },
+  {
+    "context": "A message references insider knowledge.",
+    "attacker_line": "Hey,\nI spoke with Sarah earlier.\n\nShe said you could help\nwith system access.",
+    "options": [
+      "Help since a colleague was mentioned",
+      "Verify with Sarah first",
+      "Ignore the request"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Name-dropping builds false trust.",
+      "Correct.\nAlways verify.",
+      "Ignoring avoids risk but misses reporting."
+    ]
+  },
+  {
+    "context": "An email claims to be from HR.",
+    "attacker_line": "HR Update\n\nPlease confirm your personal\ninformation to stay compliant.",
+    "options": [
+      "Reply with details",
+      "Click the link provided",
+      "Contact HR directly"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "HR never asks for data this way.",
+      "Links are risky.",
+      "Correct.\nDirect contact is safest."
+    ]
+  },
+  {
+    "context": "You receive a survey link.",
+    "attacker_line": "Company Survey\n\nMandatory participation required.\n\nClick below to begin.",
+    "options": [
+      "Click the link",
+      "Ignore it",
+      "Verify the survey source"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "Surveys are often abused.",
+      "Ignoring avoids risk but misses validation.",
+      "Correct.\nVerify before interacting."
+    ]
+  },
+  {
+    "context": "A message offers a reward.",
+    "attacker_line": "Congratulations!\n\nYou’ve been selected\nfor a bonus reward.\n\nLog in to claim.",
+    "options": [
+      "Log in immediately",
+      "Share with coworkers",
+      "Verify through official channels"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "Rewards are used to lure victims.",
+      "Spreading increases risk.",
+      "Correct.\nAlways verify incentives."
+    ]
+  },
+  {
+    "context": "A colleague asks for help while stressed.",
+    "attacker_line": "Hey,\nI’m under pressure right now.\n\nCan you just send me\nyour access so I can finish?",
+    "options": [
+      "Share access to help",
+      "Refuse and suggest alternatives",
+      "Give temporary credentials"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Helping like this breaks policy.",
+      "Correct.\nSecurity comes first.",
+      "Temporary access is still unsafe."
+    ]
+  },
+  {
+    "context": "You receive a QR code email.",
+    "attacker_line": "New policy update.\n\nScan the QR code\nbelow to read.",
+    "options": [
+      "Scan the QR code",
+      "Forward to others",
+      "Check policy updates internally"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "QR codes can hide malicious links.",
+      "Forwarding spreads risk.",
+      "Correct.\nUse trusted portals."
+    ]
+  },
+  {
+    "context": "A caller claims to be external support.",
+    "attacker_line": "Hello,\nWe provide support\nfor your software vendor.\n\nWe need access to assist.",
+    "options": [
+      "Grant access",
+      "Ask for vendor verification",
+      "End the call"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "External access must be verified.",
+      "Correct.\nVendors follow formal processes.",
+      "Ending avoids risk but reporting helps."
+    ]
+  },
+  {
+    "context": "A message claims a coworker is locked out.",
+    "attacker_line": "Urgent!\nJohn is locked out\nand can’t work.\n\nCan you reset his access?",
+    "options": [
+      "Reset access",
+      "Contact IT",
+      "Ask John for credentials"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Only IT handles access resets.",
+      "Correct.\nFollow procedure.",
+      "Never request credentials."
+    ]
+  },
+  {
+    "context": "A message references company restructuring.",
+    "attacker_line": "Confidential.\n\nDue to restructuring,\nwe need to verify staff\naccounts today.",
+    "options": [
+      "Comply due to confidentiality",
+      "Verify through management",
+      "Ignore the message"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Confidential claims build pressure.",
+      "Correct.\nVerify sensitive requests.",
+      "Ignoring avoids risk but reporting is better."
+    ]
+  },
+  {
+    "context": "An email uses poor grammar but official logos.",
+    "attacker_line": "Important Notice!\n\nYour accunt need update.\n\nLogin now.",
+    "options": [
+      "Ignore grammar mistakes",
+      "Click anyway due to logo",
+      "Report the email"
+    ],
+    "correct_index": 2,
+    "feedback": [
+      "Grammar mistakes are warning signs.",
+      "Logos can be copied.",
+      "Correct.\nReport suspicious messages."
+    ]
+  },
+  {
+    "context": "A message claims to help you.",
+    "attacker_line": "I noticed your system\nis vulnerable.\n\nI can help fix it quickly.",
+    "options": [
+      "Accept the help",
+      "Ask for proof and authorization",
+      "Give limited access"
+    ],
+    "correct_index": 1,
+    "feedback": [
+      "Unsolicited help is risky.",
+      "Correct.\nVerification is essential.",
+      "Limited access is still dangerous."
     ]
   }
 ]

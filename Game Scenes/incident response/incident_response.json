@@ -1,0 +1,56 @@
+[
+  {
+    "context": "Your computer suddenly starts behaving strangely during work hours.",
+    "incident": "Possible malware activity detected on your workstation.",
+    "actions": [
+      "Disconnect the computer from the network",
+      "Continue working and hope it resolves itself",
+      "Notify the IT security team",
+      "Restart the computer multiple times"
+    ],
+    "correct_actions": [0, 2],
+    "wrong_actions": [1, 3],
+    "feedback": [
+      "Correct.\nDisconnecting limits the spread of malware.",
+      "Incorrect.\nIgnoring the issue can worsen the damage.",
+      "Correct.\nIT must be informed immediately.",
+      "Incorrect.\nRestarting can interfere with investigation."
+    ]
+  },
+  {
+    "context": "You find an unknown USB device plugged into a shared workstation.",
+    "incident": "Suspicious removable media detected.",
+    "actions": [
+      "Remove the USB and give it to IT",
+      "Plug the USB in to see what’s inside",
+      "Report the incident to IT",
+      "Leave the USB connected"
+    ],
+    "correct_actions": [0, 2],
+    "wrong_actions": [1, 3],
+    "feedback": [
+      "Correct.\nUnknown devices should be handled by IT.",
+      "Incorrect.\nUSB devices are a common attack vector.",
+      "Correct.\nReporting helps prevent future incidents.",
+      "Incorrect.\nLeaving it connected poses a risk."
+    ]
+  },
+  {
+    "context": "You receive a notification about a login attempt from another country.",
+    "incident": "Suspicious account activity detected.",
+    "actions": [
+      "Change your password immediately",
+      "Ignore the alert",
+      "Notify IT or the security team",
+      "Share the alert with a colleague"
+    ],
+    "correct_actions": [0, 2],
+    "wrong_actions": [1, 3],
+    "feedback": [
+      "Correct.\nChanging passwords limits unauthorized access.",
+      "Incorrect.\nSuspicious activity should never be ignored.",
+      "Correct.\nSecurity teams must be informed.",
+      "Incorrect.\nSharing does not resolve the threat."
+    ]
+  }
+]

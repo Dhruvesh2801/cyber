@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GlobalVariables="*res://Globals/GlobalVariables.gd"
 SignalManager="*res://Globals/SignalManager.gd"
+SoundManager="*res://Globals/SoundManager.gd"
 
 [display]
 

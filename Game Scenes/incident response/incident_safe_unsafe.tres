@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://btbw7addmvduq"]
+
+[ext_resource type="FontFile" uid="uid://dawgypwmlmqre" path="res://Game Scenes/Password/VIEMON.ttf" id="1_38ryh"]
+
+[resource]
+font = ExtResource("1_38ryh")
+font_size = 50
+font_color = Color(1, 1, 1, 0.431373)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)

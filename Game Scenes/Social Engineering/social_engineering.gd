@@ -61,7 +61,7 @@ func load_passwords()-> Array:
 	if result is Array:
 		#pick a random 15 mails
 		result.shuffle()
-		return result.slice(0, 15)
+		return result.slice(0, 10)
 	else:
 		push_error("Invalid JSON format: Expected an Array")
 		return []
@@ -78,9 +78,7 @@ func show_password() -> void:
 	option_1.text = password["options"][0]
 	option_2.text = password["options"][1]
 	option_3.text = password["options"][2]
-	#tip1 = password["feedback"][0]
-	#tip2 = password["feedback"][1]
-	#tip3 = password["feedback"][2]
+
 	tips = password["feedback"]
 	main_text.text = password["attacker_line"]
 	correct_index = password["correct_index"]
@@ -122,7 +120,7 @@ func _on_option_3_pressed() -> void:
 func check_answer(ans: int) ->void:
 	var tip = tips[ans]
 	if ans == correct_index:
-		total_score +=15
+		total_score +=20
 		show_password()
 	else:
 		display_tip(tip)
@@ -134,3 +132,22 @@ func display_tip(text:String) ->void:
 	await get_tree().create_timer(2).timeout
 	tip_panel.hide()
 	block_click.hide()
+
+
+func _on_retry_pressed() -> void:
+	get_tree().change_scene_to_file("res://Game Scenes/Social Engineering/social_engineering.tscn")
+	pass # Replace with function body.
+
+
+func _on_main_menu_pressed() -> void:
+	GlobalVariables.session_data["game3_score"] = total_score
+	GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://MainMenu/main_menu.tscn")
+	pass # Replace with function body.
+
+
+func _on_next_level_pressed() -> void:
+	GlobalVariables.session_data["game3_score"] = total_score
+	GlobalVariables.save_current_session_to_file()
+	get_tree().change_scene_to_file("res://Game Scenes/Social Engineering/social_engineering.tscn")# to change this scene later.
+	pass # Replace with function body.

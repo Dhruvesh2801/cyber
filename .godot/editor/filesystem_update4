@@ -1,7 +1,9 @@
+res://Game Scenes/incident response/incident_response.tscn
 res://MainMenu/Font/Main_Menu_NAME_100px.tres
 res://Resources/PinkTheme.tres
 res://Game Scenes/Phishing/score_label.tres
-res://Game Scenes/Social Engineering/social_engineering.tscn
+res://Resources/tip_label_settings.tres
+res://Game Scenes/incident response/incident_safe_unsafe.tres
 res://MainMenu/main_menu.tscn
 res://MainMenu/exit.tscn
 res://Game Scenes/test_pw.tscn
@@ -10,5 +12,11 @@ res://dialogue/dialogue.tscn
 res://MainMenu/Leaderboard.tscn
 res://Game Scenes/Password/password_game.tscn
 res://Game Scenes/Introduction/introduction.tscn
-res://Game Scenes/Social Engineering/social_engineering.gd
-res://Game Scenes/Password/password_game.gd
+res://Game Scenes/Social Engineering/social_engineering.tscn
+res://Game Scenes/incident response/drag_card.tscn
+res://Game Scenes/incident response/incident_response.gd
+res://drag_card.gd
+res://Game Scenes/incident response/drag_card.gd
+res://Game Scenes/incident response/Dropzone.gd
+res://Globals/SignalManager.gd
+res://Globals/SoundManager.gd

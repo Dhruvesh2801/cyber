@@ -145,8 +145,7 @@ func _on_main_menu_pressed() -> void:
 
 func _on_next_level_pressed() -> void:
 	GlobalVariables.session_data["game2_score"] = total_score
-	GlobalVariables.save_current_session_to_file()
-	get_tree().change_scene_to_file("res://Game Scenes/Password/password_game.tscn")# to change this scene later
+	get_tree().change_scene_to_file("res://Game Scenes/Social Engineering/social_engineering.tscn")# to change this scene later
 	pass # Replace with function body.
 
 func show_buttons():

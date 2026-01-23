@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfhs63kph2b4c"]
+
+[ext_resource type="Script" uid="uid://bnny5j6030tm2" path="res://Game Scenes/incident response/drag_card.gd" id="1_0sbwc"]
+
+[node name="draggable_card" type="Panel"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0sbwc")
+
+[node name="card_text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello"
+horizontal_alignment = 1
+vertical_alignment = 1
